@@ -1,0 +1,181 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.chatroom {
+  background-color: white;
+  display: flex;
+  height: 100vh;
+}
+
+.chatroom .sidebar {
+  width: 20%;
+  height: 100vh;
+  background-color: rgb(52, 52, 52);
+}
+
+.chatroom .info {
+  width: 100%;
+  margin-left: 10px;
+}
+
+#user-email, #user-name {
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+  color: white;
+}
+
+.sidebutton {
+  display: inline-block;
+  gap: 20px;
+  padding: 10px;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.chat-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-box {
+  display: flex;
+  background-color: white;
+  width: 100%;
+}
+
+.newInput {
+  flex: 1;
+  padding: 10px;
+}
+
+.roomName {
+  font-size: 30px;
+  color: white;
+  margin-bottom: 10px;
+  margin-left: 10px; 
+  margin-right: 10px; 
+  border-radius: 10px;
+  background-color: rgb(6, 130, 247);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.roomName:hover {
+  background-color: rgb(74, 166, 252); 
+}
+
+.send {
+  margin-left: 10px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+}
+
+.room-name {
+  font-size: 40px; 
+  text-align: center; 
+  margin-bottom: auto; 
+}
+
+.chat-area {
+  flex: 1;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.chat-area .sender {
+  display: block;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 5px;
+  margin-right: 5px;
+  width: auto;
+  font-size: 20px;
+}
+
+.message .text {
+  display: inline-block;
+  margin-bottom: 10px;
+  background-color: rgb(126, 126, 126);
+  color: white;
+  font-size: 30px;
+  border-radius: 75px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  margin-left: 40px;
+}
+
+.own-message .text {
+  display: inline-block;
+  background-color: rgb(3, 85, 248);
+  color: white;
+  font-size: 30px;
+  border-radius: 75px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  margin-right: 40px;
+}
+
+.message {
+  margin-bottom: 10px;
+}
+
+.own-message {
+  text-align: right;
+}
+
+.message-list {
+  overflow-y: auto;
+}
+
+.list {
+  color: aliceblue;
+  font-size: 30px;
+}
+
+.sidebar{
+  overflow-y: auto;
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.message .text {
+  display: inline-block;
+  margin-bottom: 10px;
+  background-color: rgb(126, 126, 126);
+  color: white;
+  font-size: 30px;
+  border-radius: 75px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  margin-left: 40px;
+  animation: popIn 0.3s ease forwards;
+}
+
+.own-message .text {
+  display: inline-block;
+  background-color: rgb(3, 85, 248);
+  color: white;
+  font-size: 30px;
+  border-radius: 75px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  margin-right: 40px;
+  animation: popIn 0.3s ease forwards;
+}

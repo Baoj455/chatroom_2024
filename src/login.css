@@ -1,0 +1,63 @@
+.auth {
+    background-color:rgba(85, 84, 84, 0.66);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 300px;
+    border: 2px solid black; 
+    border-radius: 10px; 
+}
+
+button{
+    cursor: pointer;
+}
+
+.auth .button-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    gap: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.button-active {
+    background-color:rgb(26, 248, 156);
+    color: black; 
+}
+ 
+.button-normal {
+    background-color: white; 
+    color: black; 
+}
+
+.button-normal,
+.button-active {
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+.function-button {
+    margin-bottom: 10px;
+    font-size: 16px;
+    width: 150px;
+    height: 50px;
+    border: none; 
+    border-radius: 5px; 
+    background-color:rgb(51, 75, 251);
+    color: white; 
+}
+
+.input-field {
+    width: 200px;
+    height: 40px; 
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+    border: 1px solid black; 
+    border-radius: 5px; 
+    font-size: 16px;
+}
